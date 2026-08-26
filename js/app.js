@@ -6,10 +6,13 @@ const todoList = document.getElementById('todoList');
 function addTodo(text) {
   const li = document.createElement('li');
   li.innerText = text;
-  // 新增：点击标记完成
-  li.addEventListener('click', ()=>{
-    li.classList.toggle('done');
+  const delBtn = document.createElement('button');
+  delBtn.innerText = "删除";
+  delBtn.style.marginLeft="10px";
+  delBtn.addEventListener('click',()=>{
+    li.remove();
   })
+  li.appendChild(delBtn);
   todoList.appendChild(li);
 }
 
