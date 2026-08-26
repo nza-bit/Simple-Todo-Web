@@ -1,23 +1,101 @@
-.container {
-  max-width: 500px;
-  margin: 3rem auto;
-  padding: 0 1rem;
+/* 深色卡片风格待办页面样式 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+body {
+  background-color: #1a1a2e;
+  color: #eaeaea;
+  font-family: "Microsoft Yahei", sans-serif;
+  padding-top: 4rem;
+}
+
+.container {
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #16213e;
+  border-radius: 14px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.35);
+}
+
+.container h1 {
+  text-align: center;
+  margin-bottom: 1.8rem;
+  font-size: 24px;
+  color: #00d4ff;
+}
+
 .input-box {
   display: flex;
-  gap:8px;
+  gap: 10px;
+  margin-bottom: 1.5rem;
 }
+
 #todoInput {
-  flex:1;
-  padding:6px;
+  flex: 1;
+  padding: 10px 14px;
+  border: 1px solid #30475e;
+  border-radius: 8px;
+  background: #0f3460;
+  color: #fff;
+  font-size: 15px;
 }
+
+#todoInput::placeholder {
+  color: #a0a0a0;
+}
+
+#addBtn {
+  padding: 0 18px;
+  background-color: #00d4ff;
+  border: none;
+  border-radius: 8px;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+#addBtn:hover {
+  background-color: #00b8de;
+}
+
 ul {
-  padding-left: 20px;
+  list-style: none;
 }
+
 li {
-  margin: 6px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 14px;
+  background-color: #0f3460;
+  border-radius: 8px;
+  margin‑bottom: 10px;
+  transition: 0.2s;
 }
+
+li:hover {
+  background-color: #134074;
+}
+
 .done {
-  text-decoration: line-through;
-  color:#888;
+  text‑decoration: line-through;
+  color: #718096;
+}
+
+li button {
+  background: #e53935;
+  border: none;
+  color: white;
+  padding: 4px 10px;
+  border‑radius: 6px;
+  cursor: pointer;
+}
+
+li button:hover {
+  background-color: #c62828;
 }
