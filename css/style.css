@@ -17,3 +17,7 @@ ul {
 li {
   margin: 6px 0;
 }
+.done {
+  text-decoration: line-through;
+  color:#888;
+}
