@@ -6,6 +6,10 @@ const todoList = document.getElementById('todoList');
 function addTodo(text) {
   const li = document.createElement('li');
   li.innerText = text;
+  // 新增：点击标记完成
+  li.addEventListener('click', ()=>{
+    li.classList.toggle('done');
+  })
   todoList.appendChild(li);
 }
 
