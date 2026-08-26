@@ -6,6 +6,11 @@ const todoList = document.getElementById('todoList');
 function addTodo(text) {
   const li = document.createElement('li');
   li.innerText = text;
+  // 标记完成
+  li.addEventListener('click', ()=>{
+    li.classList.toggle('done');
+  })
+  // 删除按钮
   const delBtn = document.createElement('button');
   delBtn.innerText = "删除";
   delBtn.style.marginLeft="10px";
